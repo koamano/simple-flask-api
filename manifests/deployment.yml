@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "akskoamano-0664"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "akskoamano-0664"
+  template:
+    metadata:
+      labels:
+        app: "akskoamano-0664"
+    spec:
+      containers:
+        - name: "akskoamano-0664"
+          image: "crkoamano.azurecr.io/akskoamano"
+          ports:
+          - containerPort: 80

@@ -17,3 +17,9 @@ spec:
           image: "crkoamano.azurecr.io/akskoamano-flask"
           ports:
           - containerPort: 80
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            failureThreshold: 1
+            periodSeconds: 10

@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: "akskoamano-0664"
+  name: "koamano-api"
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: "akskoamano-0664"
+      app: "koamano-api"
   template:
     metadata:
       labels:
-        app: "akskoamano-0664"
+        app: "koamano-api"
     spec:
       containers:
-        - name: "akskoamano-0664"
-          image: "crkoamano.azurecr.io/akskoamano"
+        - name: "koamano-api"
+          image: "crkoamano.azurecr.io/akskoamano-flask"
           ports:
           - containerPort: 80

@@ -17,8 +17,8 @@ jobs:
     # - name: Build and push image to ACR
     #   id: build-image
     #   run: |
-    #     docker build "$GITHUB_WORKSPACE/calculator_flask" -f  "calculator_flask/Dockerfile" -t crkoamano.azurecr.io/akskoamano-flask:0.0.2 --label dockerfile-path=calculator_flask/Dockerfile
-    #     docker push crkoamano.azurecr.io/akskoamano-flask:0.0.2 
+    #     docker build "$GITHUB_WORKSPACE/calculator_flask" -f  "calculator_flask/Dockerfile" -t crkoamano.azurecr.io/akskoamano-flask:bad --label dockerfile-path=calculator_flask/Dockerfile
+    #     docker push crkoamano.azurecr.io/akskoamano-flask:bad 
     
     - name: Build and push image to ACR
       id: build-image

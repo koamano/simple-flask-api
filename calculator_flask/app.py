@@ -13,7 +13,8 @@ def calculator():
 
 @app.route('/', methods=['GET'])
 def helloworld():
-    return "hello world 0.0.2"
+    #return "Record not found", 400
+    return "hello world my new changes"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True) 
